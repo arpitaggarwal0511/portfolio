@@ -8,9 +8,8 @@ body{
     padding: 50px 0;
 
 }
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+.nav {margin-left: 250px ;
 
-.nav {
     font-family: "PT Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -27,7 +26,6 @@ body{
   display: inline-block;
   list-style: outside none none;
   margin: .5em 1em;
-  paddin: 0;
 }
 
 .nav a {
@@ -52,8 +50,8 @@ body{
   content: '';
   right: 0;
   top: 0;
-  border-top: 3px solid #3E8914;
-  border-right: 3px solid #2E640F;
+  border-top: 3px solid #b87eff;
+  border-right: 3px solid #c799ff;
   transform: translate(-100%, 50%);
 }
 
@@ -61,8 +59,8 @@ body{
   content: '';
   left: 0;
   bottom: 0;
-  border-bottom: 3px solid #2E640F;
-  border-left: 3px solid #3E8914;
+  border-bottom: 3px solid #b87eff;
+  border-left: 3px solid #c799ff;
   transform: translate(100%, -50%)
 }
 
@@ -73,5 +71,40 @@ body{
 }
 
 .nav a:hover {
-  color: #3DA35D;
+  color: #8358e6;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.homing{
+    margin: 50px;
+    font-family: "PT Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+.homing a{
+    text-decoration: none;
+    
 }
