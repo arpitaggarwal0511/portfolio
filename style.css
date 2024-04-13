@@ -11,7 +11,7 @@ body {
 }
 
 .nav {
-    margin-left: 280px;
+    margin-left: 700px;
     font-family: "PT Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -93,7 +93,7 @@ body {
 }
 
 .homing {
-    margin: 50px;
+    margin: 80px;
     font-family: "PT Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -107,12 +107,14 @@ body {
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
     animation: textShine 5s ease-in-out infinite alternate;
+
+    text-decoration: none;
 }
 
 .homing a {
     text-decoration: none;
-
-}
+    
+  }
 
 
 .resume {
